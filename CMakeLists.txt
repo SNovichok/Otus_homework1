@@ -18,4 +18,4 @@ include(CPack)
 
 enable_testing()
 
-add_test(test_version test_version)
+add_test(test_version ${CMAKE_BINARY_DIR}/test/test_version)

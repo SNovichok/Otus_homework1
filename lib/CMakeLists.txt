@@ -14,14 +14,9 @@ set_target_properties(
 
 target_include_directories(
     homework1_lib
-    PRIVATE 
-    ${CMAKE_CURRENT_BINARY_DIR}
-)
-
-target_include_directories(
-    homework1_lib
-    PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/../src
+    PUBLIC 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}/../src
 )
 
 if (MSVC)
